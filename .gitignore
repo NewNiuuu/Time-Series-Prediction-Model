@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.venv/
+
+# Data files (avoid leaking real business data)
+data/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Model checkpoints (too large for git)
+models/*.pth
+models/*.pkl
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+# LSTM 时序预测项目 - Conda 环境配置文件
+#
+# 使用方法:
+#   conda env create -f environment.yml
+#   conda activate lstm_sales_env
+#
+# 注意: PyTorch 的 CUDA 版本由 conda 自动匹配当前系统的 GPU 驱动。
+
+name: lstm_sales_env
+
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pytorch
+  - pandas
+  - openpyxl
+  - scikit-learn
+  - joblib
+  - pip
+  - pip:
+    - -i https://mirrors.aliyun.com/pypi/simple/
+    - matplotlib
+    # 如果后续有只能通过 pip 安装的包，请写在这里
